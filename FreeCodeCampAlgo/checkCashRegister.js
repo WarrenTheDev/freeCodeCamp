@@ -16,11 +16,7 @@ function checkCashRegister(price, cash, cid) {
   };
 
   cid.reduceRight((prevVal, currVal) => {
-    if (change / currUnit[currVal[0]] >= 1) {
-      let leftOver = currVal[1];
-      //while loop here
-      console.log(leftOver);
-    }
+    console.log(currVal);
   }, cid[cid.length - 1]);
 
   return changeNeeded;
